@@ -1,6 +1,8 @@
 call plug#begin()
 " Color theme
 Plug 'junegunn/seoul256.vim'
+" Floaterm
+Plug 'voldikss/vim-floaterm'
 " FZF
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -51,6 +53,7 @@ noremap <Leader><Tab> <C-^>
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/fzf.vim
 source $HOME/.config/nvim/airline.vim
+source $HOME/.config/nvim/floaterm.vim
 lua require('treesitter')
 
 " Disable auto format from vim-go (leave it to codefmt)
