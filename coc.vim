@@ -93,3 +93,7 @@ nnoremap <silent><nowait> <space>cc  :<C-u>CocList commands<cr>
 nnoremap <silent><nowait> <space>co  :<C-u>CocList outline<cr>
 " Search workspace symbols.
 nnoremap <silent><nowait> <space>cs  :<C-u>CocList -I symbols<cr>
+" Do default action for next item.
+nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+" Do default action for previous item.
+nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
