@@ -9,7 +9,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Git integration
 Plug 'tpope/vim-fugitive'
-" Cmake integration
+" CMake integration
 Plug 'cdelledonne/vim-cmake'
 " Syntax highlight
 Plug 'nvim-treesitter/nvim-treesitter'
@@ -29,7 +29,7 @@ call plug#end()
 
 " Color
 set termguicolors
-" Use the colorscheme
+" seoul256 colorscheme
 let g:seoul256_background = 236
 color seoul256
 
@@ -41,7 +41,7 @@ set cursorline
 noremap ; :
 
 " Lerder map
-let mapleader = " "
+map <Space> <Leader>
 noremap <silent><ESC> :nohl<CR>
 noremap <Leader>R :source $HOME/.config/nvim/init.vim<CR>
 noremap <Leader>bd :bd<CR>
