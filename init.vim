@@ -36,7 +36,7 @@ let g:seoul256_background = 236
 color seoul256
 
 " General
-set hidden
+" set hidden "Drop buffer without save when buffer close
 set nu
 set rnu
 set cursorline
@@ -46,7 +46,8 @@ noremap ; :
 map <Space> <Leader>
 noremap <silent><ESC> :nohl<CR>
 noremap <Leader>R :source $HOME/.config/nvim/init.vim<CR>
-noremap <Leader>bd :bd<CR>
+noremap <Leader>bd :bd!<CR>
+noremap <Leader>x :bd<CR>
 noremap <Leader>w <C-W>
 noremap <Leader><Tab> <C-^>
 
