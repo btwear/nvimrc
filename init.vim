@@ -58,6 +58,7 @@ source $HOME/.config/nvim/floaterm.vim
 lua require('treesitter')
 
 " Disable auto format from vim-go (leave it to codefmt)
+let g:go_doc_keywordprg_enabled = 0 "Use Coc hover doc instead
 let g:go_fmt_autosave = 0
 
 call glaive#Install()
